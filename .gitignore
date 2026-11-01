@@ -1,32 +1,73 @@
-# Python virtual environments
-**/venv/
-**/venv*/
-**/.venv/
-**/env/
-**/ENV/
+# ============================================================
+# Python Virtual Environments
+# ============================================================
+venv/
+venv311/
+.venv/
+env/
+ENV/
+*.egg-info/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-# Python cache & compiled bytecode
-**/__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.pytest_cache/
+# ============================================================
+# Large ML Model Files
+# ============================================================
+*.pt
+*.pth
+*.onnx
+*.h5
+*.pkl
+*.bin
+*.safetensors
+*.ckpt
+
+# ============================================================
+# Large Data Files (CSV, Parquet, etc.)
+# ============================================================
+*.csv
+*.parquet
+*.tsv
+*.feather
+*.arrow
+*.hdf5
+*.h5
+*.db
+*.sqlite
+
+# ============================================================
+# Checkpoint / Temp / Stream Directories
+# ============================================================
+streaming_checkpoint/
+streaming_temp/
+test_stream_dir/
+checkpoints/
+runs/
+outputs/
+logs/
+*.log
+
+# ============================================================
+# Jupyter Notebook Checkpoints
+# ============================================================
 .ipynb_checkpoints/
 
-# Streaming / temporary execution directories
-DDos Attack Detecting/streaming_checkpoint/
-DDos Attack Detecting/streaming_temp/
-DDos Attack Detecting/test_stream_dir/
-
-# OS and system files
+# ============================================================
+# OS / IDE Files
+# ============================================================
 .DS_Store
 Thumbs.db
-ehthumbs.db
-[Dd]esktop.ini
-$RECYCLE.BIN/
-
-# IDE configurations
 .idea/
 .vscode/
 *.swp
 *.swo
+
+# ============================================================
+# Files over 100MB (DLLs, JARs from venv)
+# ============================================================
+*.dll
+*.jar
+*.so
+*.dylib
