@@ -1,0 +1,16 @@
+The paper's gaps :
+
+No documented train/test split — paper used 270 test records out of 58,596, never explained how.
+
+IP/port grouping doesn't exist in the data — Algorithm 1 groups by source_ip/source_port, but the dataset only has memory-forensics features and a malware-family label.
+
+No documented feature list — paper never says which of the 54 columns it used.
+
+Training and inference are mixed together — the paper's own algorithm blurs "learn from data" and "predict on new data" into one blob.
+
+"KAFKA Robustness" section makes no measurable claims — it restates general Kafka facts, never tests them.
+
+Paper's Equation 1 for Precision contains a typo (TN instead of TP in the denominator); however, this cannot explain the Accuracy discrepancy since Accuracy is computed independently via a separately-stated .
+
+
+NOW MAKE THE PRESENTATION OF THE RESEARCH GAPS AND RESEACH PAPER DIFFERENTIATION  .  . . .

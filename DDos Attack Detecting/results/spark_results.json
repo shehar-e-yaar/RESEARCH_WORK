@@ -1,0 +1,28 @@
+{
+  "Spark RF": {
+    "Acc": 98.88,
+    "F1": 98.87,
+    "ROC_AUC": 99.72,
+    "Train_Time_s": 161.55
+  },
+  "Spark GBT": {
+    "Acc": 84.5,
+    "F1": 85.17,
+    "Train_Time_s": 202.05
+  },
+  "Spark LinearSVC": {
+    "Acc": 99.25,
+    "F1": 99.24,
+    "Train_Time_s": 122.83
+  },
+  "Spark NB": {
+    "Acc": 77.71,
+    "F1": 73.63,
+    "Train_Time_s": 10.69
+  },
+  "Spark LR": {
+    "Acc": 99.23,
+    "F1": 99.23,
+    "Train_Time_s": 49.36
+  }
+}

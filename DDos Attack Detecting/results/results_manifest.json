@@ -1,0 +1,363 @@
+{
+  "gap_analysis.json": {
+    "file_name": "gap_analysis.json",
+    "size_bytes": 960,
+    "top_level_keys": [
+      "XGBoost",
+      "Random Forest",
+      "SVM",
+      "K-Means",
+      "Naive Bayes",
+      "Log Regression"
+    ],
+    "metrics_present": [
+      "acc_error",
+      "calc_f1",
+      "cm_acc",
+      "f1_error",
+      "reported_f1",
+      "tab_acc"
+    ],
+    "ci_fields_present": [],
+    "has_confidence_intervals": false
+  },
+  "kmeans_detailed_mappings.json": {
+    "file_name": "kmeans_detailed_mappings.json",
+    "size_bytes": 5693,
+    "top_level_keys": [
+      "k_2",
+      "k_5",
+      "k_10",
+      "k_15"
+    ],
+    "metrics_present": [
+      "posthoc_test_map_acc",
+      "train_map_acc"
+    ],
+    "ci_fields_present": [],
+    "has_confidence_intervals": false
+  },
+  "naive_bayes_scaling_audit.json": {
+    "file_name": "naive_bayes_scaling_audit.json",
+    "size_bytes": 1181,
+    "top_level_keys": [
+      "var_smoothing_1e-09",
+      "var_smoothing_1e-12",
+      "var_smoothing_1e-15",
+      "var_smoothing_0.0",
+      "mathematical_explanation"
+    ],
+    "metrics_present": [
+      "scaled_accuracy",
+      "unscaled_accuracy"
+    ],
+    "ci_fields_present": [],
+    "has_confidence_intervals": false
+  },
+  "phase2_results.json": {
+    "file_name": "phase2_results.json",
+    "size_bytes": 107812,
+    "top_level_keys": [
+      "deduplication_summary",
+      "setup_a_seeds",
+      "setup_a_summary",
+      "setup_b_seeds",
+      "setup_b_summary",
+      "setup_c_seeds",
+      "setup_c_summary",
+      "cv_full_setup_b"
+    ],
+    "metrics_present": [
+      "Acc",
+      "Acc_CI",
+      "Acc_Reweighted",
+      "Acc_Reweighted_mean",
+      "Acc_mean",
+      "Acc_std",
+      "F1",
+      "F1_CI",
+      "F1_Reweighted",
+      "F1_Reweighted_mean",
+      "F1_mean",
+      "F1_std",
+      "FN",
+      "FNR",
+      "FP",
+      "FPR",
+      "PR_AUC",
+      "Prec",
+      "Prec_CI",
+      "Prec_Reweighted",
+      "Prec_mean",
+      "Prec_std",
+      "ROC_AUC",
+      "Rec",
+      "Rec_CI",
+      "Rec_Reweighted",
+      "Rec_mean",
+      "Rec_std",
+      "Spec",
+      "Spec_mean",
+      "Spec_std",
+      "TN",
+      "TP"
+    ],
+    "ci_fields_present": [
+      "Acc_CI",
+      "F1_CI",
+      "Prec_CI",
+      "Rec_CI"
+    ],
+    "has_confidence_intervals": true
+  },
+  "phase3_results.json": {
+    "file_name": "phase3_results.json",
+    "size_bytes": 8094,
+    "top_level_keys": [
+      "metric_averaging_hypothesis",
+      "inconsistency_audit",
+      "statistical_comparisons",
+      "scaling_hypothesis",
+      "feature_ablation"
+    ],
+    "metrics_present": [
+      "Acc",
+      "F1",
+      "acc_scaled",
+      "acc_unscaled",
+      "paper_acc"
+    ],
+    "ci_fields_present": [
+      "ci_width",
+      "paper_ci"
+    ],
+    "has_confidence_intervals": true
+  },
+  "phase4_pyspark_results.json": {
+    "file_name": "phase4_pyspark_results.json",
+    "size_bytes": 1476,
+    "top_level_keys": [
+      "Spark RF",
+      "Spark LinearSVC",
+      "Spark Logistic Regression",
+      "Spark Naive Bayes",
+      "Spark Decision Tree",
+      "Spark K-Means",
+      "Spark GBT (NOT equivalent to XGBoost)",
+      "comparison_with_sklearn"
+    ],
+    "metrics_present": [
+      "Acc",
+      "F1",
+      "Sklearn_Acc",
+      "Spark_Acc"
+    ],
+    "ci_fields_present": [],
+    "has_confidence_intervals": false
+  },
+  "phase4_streaming_results.json": {
+    "file_name": "phase4_streaming_results.json",
+    "size_bytes": 3132,
+    "top_level_keys": [
+      "training_time_s",
+      "rates_tested",
+      "repeats_per_rate",
+      "runs",
+      "summary"
+    ],
+    "metrics_present": [],
+    "ci_fields_present": [
+      "avg_p95_ms",
+      "p95_latency_ms"
+    ],
+    "has_confidence_intervals": true
+  },
+  "reproduction_results.json": {
+    "file_name": "reproduction_results.json",
+    "size_bytes": 14595,
+    "top_level_keys": [
+      "setup_a",
+      "setup_b",
+      "setup_c",
+      "cv_results",
+      "paper_results",
+      "feature_importances",
+      "config"
+    ],
+    "metrics_present": [
+      "Acc",
+      "Acc_CI_hi",
+      "Acc_CI_lo",
+      "F1",
+      "FN",
+      "FNR",
+      "FP",
+      "FPR",
+      "PR_AUC",
+      "Prec",
+      "ROC_AUC",
+      "Rec",
+      "Spec",
+      "TN",
+      "TP",
+      "accuracy",
+      "f1",
+      "precision",
+      "recall"
+    ],
+    "ci_fields_present": [
+      "Acc_CI_hi",
+      "Acc_CI_lo"
+    ],
+    "has_confidence_intervals": true
+  },
+  "results_manifest.json": {
+    "file_name": "results_manifest.json",
+    "size_bytes": 8266,
+    "top_level_keys": [
+      "gap_analysis.json",
+      "kmeans_detailed_mappings.json",
+      "naive_bayes_scaling_audit.json",
+      "phase2_results.json",
+      "phase3_results.json",
+      "phase4_pyspark_results.json",
+      "phase4_streaming_results.json",
+      "reproduction_results.json",
+      "results_manifest.json",
+      "row_counts.json",
+      "setup_c_extras.json",
+      "shortcut_ablation_setup_c.json",
+      "spark_comparison_audit.json",
+      "spark_results.json",
+      "streaming_proof.json"
+    ],
+    "metrics_present": [],
+    "ci_fields_present": [
+      "ci_fields_present",
+      "has_confidence_intervals"
+    ],
+    "has_confidence_intervals": true
+  },
+  "row_counts.json": {
+    "file_name": "row_counts.json",
+    "size_bytes": 2678,
+    "top_level_keys": [
+      "01-12",
+      "03-11"
+    ],
+    "metrics_present": [
+      "DrDoS_NTP",
+      "DrDoS_NTP.csv",
+      "TFTP",
+      "TFTP.csv"
+    ],
+    "ci_fields_present": [],
+    "has_confidence_intervals": false
+  },
+  "setup_c_extras.json": {
+    "file_name": "setup_c_extras.json",
+    "size_bytes": 7041,
+    "top_level_keys": [
+      "XGBoost",
+      "Random Forest",
+      "Logistic Regression",
+      "SVM (LinearSVC)"
+    ],
+    "metrics_present": [
+      "Acc",
+      "Acc_95_CI",
+      "F1",
+      "F1_95_CI",
+      "FN",
+      "FNR",
+      "FP",
+      "FPR",
+      "PR_AUC",
+      "Prec",
+      "Prec_95_CI",
+      "ROC_AUC",
+      "Rec",
+      "Rec_95_CI",
+      "Spec",
+      "Spec_95_CI",
+      "TN",
+      "TP",
+      "fpr",
+      "per_attack_recall",
+      "pr_auc_at_prior",
+      "precision_at_prior",
+      "recall",
+      "specificity"
+    ],
+    "ci_fields_present": [
+      "Acc_95_CI",
+      "F1_95_CI",
+      "Prec_95_CI",
+      "Rec_95_CI",
+      "Spec_95_CI"
+    ],
+    "has_confidence_intervals": true
+  },
+  "shortcut_ablation_setup_c.json": {
+    "file_name": "shortcut_ablation_setup_c.json",
+    "size_bytes": 3419,
+    "top_level_keys": [
+      "no_dest_port",
+      "no_ack_flag",
+      "no_packet_length",
+      "all_three_removed"
+    ],
+    "metrics_present": [
+      "Accuracy",
+      "F1",
+      "Specificity"
+    ],
+    "ci_fields_present": [],
+    "has_confidence_intervals": false
+  },
+  "spark_comparison_audit.json": {
+    "file_name": "spark_comparison_audit.json",
+    "size_bytes": 1055,
+    "top_level_keys": [
+      "Decision_Tree",
+      "Naive_Bayes"
+    ],
+    "metrics_present": [
+      "Sklearn_Accuracy",
+      "Spark_Accuracy"
+    ],
+    "ci_fields_present": [],
+    "has_confidence_intervals": false
+  },
+  "spark_results.json": {
+    "file_name": "spark_results.json",
+    "size_bytes": 471,
+    "top_level_keys": [
+      "Spark RF",
+      "Spark GBT",
+      "Spark LinearSVC",
+      "Spark NB",
+      "Spark LR"
+    ],
+    "metrics_present": [
+      "Acc",
+      "F1",
+      "ROC_AUC"
+    ],
+    "ci_fields_present": [],
+    "has_confidence_intervals": false
+  },
+  "streaming_proof.json": {
+    "file_name": "streaming_proof.json",
+    "size_bytes": 1848,
+    "top_level_keys": [
+      "environment_audit",
+      "spark_structured_streaming_verified",
+      "total_rows_processed",
+      "micro_batches"
+    ],
+    "metrics_present": [],
+    "ci_fields_present": [],
+    "has_confidence_intervals": false
+  }
+}

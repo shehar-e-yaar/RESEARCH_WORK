@@ -1,0 +1,11 @@
+# Single-node Kafka broker using the OFFICIAL Apache Kafka image (KRaft mode,
+# no separate Zookeeper container needed, no extra config required).
+#
+# Start with:  docker compose up -d
+# Stop with:   docker compose down
+services:
+  kafka:
+    image: apache/kafka:3.7.0
+    container_name: ransomware-kafka-update
+    ports:
+      - "9092:9092"

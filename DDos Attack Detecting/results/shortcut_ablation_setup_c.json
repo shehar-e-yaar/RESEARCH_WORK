@@ -1,0 +1,154 @@
+{
+  "no_dest_port": {
+    "features_count": 19,
+    "features_used": [
+      "Flow Duration",
+      "Flow Bytes/s",
+      "Flow Packets/s",
+      "Packet Length Mean",
+      "Packet Length Std",
+      "Fwd Packet Length Max",
+      "Fwd Packet Length Min",
+      "Fwd Packet Length Mean",
+      "Fwd Packet Length Std",
+      "Flow IAT Mean",
+      "Flow IAT Std",
+      "Flow IAT Max",
+      "Flow IAT Min",
+      "Fwd IAT Total",
+      "Fwd IAT Mean",
+      "Fwd IAT Std",
+      "Fwd IAT Max",
+      "Fwd IAT Min",
+      "ACK Flag Count"
+    ],
+    "models": {
+      "XGBoost": {
+        "Accuracy": 98.65,
+        "Specificity": 95.1,
+        "F1": 99.09
+      },
+      "Random Forest": {
+        "Accuracy": 98.64,
+        "Specificity": 95.47,
+        "F1": 99.09
+      },
+      "Logistic Regression": {
+        "Accuracy": 99.22,
+        "Specificity": 97.19,
+        "F1": 99.47
+      }
+    }
+  },
+  "no_ack_flag": {
+    "features_count": 19,
+    "features_used": [
+      "Flow Duration",
+      "Flow Bytes/s",
+      "Flow Packets/s",
+      "Packet Length Mean",
+      "Packet Length Std",
+      "Fwd Packet Length Max",
+      "Fwd Packet Length Min",
+      "Fwd Packet Length Mean",
+      "Fwd Packet Length Std",
+      "Flow IAT Mean",
+      "Flow IAT Std",
+      "Flow IAT Max",
+      "Flow IAT Min",
+      "Fwd IAT Total",
+      "Fwd IAT Mean",
+      "Fwd IAT Std",
+      "Fwd IAT Max",
+      "Fwd IAT Min",
+      "Destination Port"
+    ],
+    "models": {
+      "XGBoost": {
+        "Accuracy": 98.31,
+        "Specificity": 94.43,
+        "F1": 98.87
+      },
+      "Random Forest": {
+        "Accuracy": 98.13,
+        "Specificity": 94.4,
+        "F1": 98.74
+      },
+      "Logistic Regression": {
+        "Accuracy": 88.47,
+        "Specificity": 91.91,
+        "F1": 91.8
+      }
+    }
+  },
+  "no_packet_length": {
+    "features_count": 14,
+    "features_used": [
+      "Flow Duration",
+      "Flow Bytes/s",
+      "Flow Packets/s",
+      "Flow IAT Mean",
+      "Flow IAT Std",
+      "Flow IAT Max",
+      "Flow IAT Min",
+      "Fwd IAT Total",
+      "Fwd IAT Mean",
+      "Fwd IAT Std",
+      "Fwd IAT Max",
+      "Fwd IAT Min",
+      "Destination Port",
+      "ACK Flag Count"
+    ],
+    "models": {
+      "XGBoost": {
+        "Accuracy": 94.28,
+        "Specificity": 94.94,
+        "F1": 96.05
+      },
+      "Random Forest": {
+        "Accuracy": 98.85,
+        "Specificity": 95.84,
+        "F1": 99.23
+      },
+      "Logistic Regression": {
+        "Accuracy": 89.87,
+        "Specificity": 70.67,
+        "F1": 93.39
+      }
+    }
+  },
+  "all_three_removed": {
+    "features_count": 12,
+    "features_used": [
+      "Flow Duration",
+      "Flow Bytes/s",
+      "Flow Packets/s",
+      "Flow IAT Mean",
+      "Flow IAT Std",
+      "Flow IAT Max",
+      "Flow IAT Min",
+      "Fwd IAT Total",
+      "Fwd IAT Mean",
+      "Fwd IAT Std",
+      "Fwd IAT Max",
+      "Fwd IAT Min"
+    ],
+    "models": {
+      "XGBoost": {
+        "Accuracy": 97.38,
+        "Specificity": 95.67,
+        "F1": 98.23
+      },
+      "Random Forest": {
+        "Accuracy": 96.97,
+        "Specificity": 94.99,
+        "F1": 97.95
+      },
+      "Logistic Regression": {
+        "Accuracy": 79.91,
+        "Specificity": 25.9,
+        "F1": 87.93
+      }
+    }
+  }
+}

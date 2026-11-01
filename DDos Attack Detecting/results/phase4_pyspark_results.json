@@ -1,0 +1,70 @@
+{
+  "Spark RF": {
+    "Acc": 98.88,
+    "F1": 98.87,
+    "time_s": 241.11
+  },
+  "Spark LinearSVC": {
+    "Acc": 99.25,
+    "F1": 99.24,
+    "time_s": 270.23
+  },
+  "Spark Logistic Regression": {
+    "Acc": 99.23,
+    "F1": 99.23,
+    "time_s": 83.03
+  },
+  "Spark Naive Bayes": {
+    "Acc": 77.71,
+    "F1": 73.63,
+    "time_s": 14.27
+  },
+  "Spark Decision Tree": {
+    "Acc": 83.59,
+    "F1": 84.29,
+    "time_s": 26.59
+  },
+  "Spark K-Means": {
+    "Acc": 73.12,
+    "cluster_map": "{0: 1, 1: 0}",
+    "time_s": 47.63
+  },
+  "Spark GBT (NOT equivalent to XGBoost)": {
+    "Acc": 84.5,
+    "F1": 85.17,
+    "time_s": 237.05,
+    "note": "Spark MLlib GBTClassifier differs in histogram splitting & tree regularization"
+  },
+  "comparison_with_sklearn": {
+    "Spark RF": {
+      "Spark_Acc": 98.88,
+      "Sklearn_Acc": 98.7,
+      "Delta": 0.18
+    },
+    "Spark LinearSVC": {
+      "Spark_Acc": 99.25,
+      "Sklearn_Acc": 99.19,
+      "Delta": 0.06
+    },
+    "Spark Logistic Regression": {
+      "Spark_Acc": 99.23,
+      "Sklearn_Acc": 99.24,
+      "Delta": -0.01
+    },
+    "Spark Naive Bayes": {
+      "Spark_Acc": 77.71,
+      "Sklearn_Acc": 79.92,
+      "Delta": -2.21
+    },
+    "Spark Decision Tree": {
+      "Spark_Acc": 83.59,
+      "Sklearn_Acc": 96.0,
+      "Delta": -12.41
+    },
+    "Spark K-Means": {
+      "Spark_Acc": 73.12,
+      "Sklearn_Acc": 75.06,
+      "Delta": -1.94
+    }
+  }
+}

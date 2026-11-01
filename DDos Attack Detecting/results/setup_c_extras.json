@@ -1,0 +1,346 @@
+{
+  "XGBoost": {
+    "overall_metrics": {
+      "TP": 128309,
+      "TN": 42546,
+      "FP": 2517,
+      "FN": 82,
+      "Acc": 98.5,
+      "Acc_95_CI": [
+        98.44,
+        98.56
+      ],
+      "Prec": 98.08,
+      "Rec": 99.94,
+      "Spec": 94.41,
+      "F1": 99.0,
+      "FPR": 5.59,
+      "FNR": 0.06,
+      "ROC_AUC": 99.96,
+      "PR_AUC": 99.99,
+      "Prec_95_CI": [
+        98.0,
+        98.15
+      ],
+      "Rec_95_CI": [
+        99.92,
+        99.95
+      ],
+      "Spec_95_CI": [
+        94.21,
+        94.63
+      ],
+      "F1_95_CI": [
+        98.96,
+        99.03
+      ]
+    },
+    "per_attack_recall": {
+      "Syn": {
+        "count": 35941,
+        "detected": 35867,
+        "recall": 99.79
+      },
+      "UDP": {
+        "count": 26221,
+        "detected": 26221,
+        "recall": 100.0
+      },
+      "LDAP": {
+        "count": 14722,
+        "detected": 14719,
+        "recall": 99.98
+      },
+      "MSSQL": {
+        "count": 24878,
+        "detected": 24877,
+        "recall": 100.0
+      },
+      "NetBIOS": {
+        "count": 22159,
+        "detected": 22158,
+        "recall": 100.0
+      },
+      "Portmap": {
+        "count": 4426,
+        "detected": 4424,
+        "recall": 99.95
+      },
+      "UDPLag": {
+        "count": 44,
+        "detected": 43,
+        "recall": 97.73
+      }
+    },
+    "benign_performance": {
+      "benign_count": 45063,
+      "specificity": 94.41,
+      "fpr": 5.59
+    },
+    "prior_adjusted_metrics_at_0_28_percent_benign": {
+      "target_benign_prior_percent": 0.28,
+      "precision_at_prior": 99.98,
+      "specificity": 94.41,
+      "recall": 99.94,
+      "pr_auc_at_prior": 3.05
+    }
+  },
+  "Random Forest": {
+    "overall_metrics": {
+      "TP": 128315,
+      "TN": 42868,
+      "FP": 2195,
+      "FN": 76,
+      "Acc": 98.69,
+      "Acc_95_CI": [
+        98.64,
+        98.74
+      ],
+      "Prec": 98.32,
+      "Rec": 99.94,
+      "Spec": 95.13,
+      "F1": 99.12,
+      "FPR": 4.87,
+      "FNR": 0.06,
+      "ROC_AUC": 99.76,
+      "PR_AUC": 99.88,
+      "Prec_95_CI": [
+        98.24,
+        98.39
+      ],
+      "Rec_95_CI": [
+        99.93,
+        99.95
+      ],
+      "Spec_95_CI": [
+        94.9,
+        95.34
+      ],
+      "F1_95_CI": [
+        99.08,
+        99.16
+      ]
+    },
+    "per_attack_recall": {
+      "Syn": {
+        "count": 35941,
+        "detected": 35869,
+        "recall": 99.8
+      },
+      "UDP": {
+        "count": 26221,
+        "detected": 26221,
+        "recall": 100.0
+      },
+      "LDAP": {
+        "count": 14722,
+        "detected": 14721,
+        "recall": 99.99
+      },
+      "MSSQL": {
+        "count": 24878,
+        "detected": 24877,
+        "recall": 100.0
+      },
+      "NetBIOS": {
+        "count": 22159,
+        "detected": 22158,
+        "recall": 100.0
+      },
+      "Portmap": {
+        "count": 4426,
+        "detected": 4426,
+        "recall": 100.0
+      },
+      "UDPLag": {
+        "count": 44,
+        "detected": 43,
+        "recall": 97.73
+      }
+    },
+    "benign_performance": {
+      "benign_count": 45063,
+      "specificity": 95.13,
+      "fpr": 4.87
+    },
+    "prior_adjusted_metrics_at_0_28_percent_benign": {
+      "target_benign_prior_percent": 0.28,
+      "precision_at_prior": 99.99,
+      "specificity": 95.13,
+      "recall": 99.94,
+      "pr_auc_at_prior": 25.31
+    }
+  },
+  "Logistic Regression": {
+    "overall_metrics": {
+      "TP": 128321,
+      "TN": 43810,
+      "FP": 1253,
+      "FN": 70,
+      "Acc": 99.24,
+      "Acc_95_CI": [
+        99.2,
+        99.28
+      ],
+      "Prec": 99.03,
+      "Rec": 99.95,
+      "Spec": 97.22,
+      "F1": 99.49,
+      "FPR": 2.78,
+      "FNR": 0.05,
+      "ROC_AUC": 99.92,
+      "PR_AUC": 99.97,
+      "Prec_95_CI": [
+        98.99,
+        99.08
+      ],
+      "Rec_95_CI": [
+        99.93,
+        99.96
+      ],
+      "Spec_95_CI": [
+        97.08,
+        97.36
+      ],
+      "F1_95_CI": [
+        99.46,
+        99.52
+      ]
+    },
+    "per_attack_recall": {
+      "Syn": {
+        "count": 35941,
+        "detected": 35887,
+        "recall": 99.85
+      },
+      "UDP": {
+        "count": 26221,
+        "detected": 26221,
+        "recall": 100.0
+      },
+      "LDAP": {
+        "count": 14722,
+        "detected": 14719,
+        "recall": 99.98
+      },
+      "MSSQL": {
+        "count": 24878,
+        "detected": 24875,
+        "recall": 99.99
+      },
+      "NetBIOS": {
+        "count": 22159,
+        "detected": 22157,
+        "recall": 99.99
+      },
+      "Portmap": {
+        "count": 4426,
+        "detected": 4420,
+        "recall": 99.86
+      },
+      "UDPLag": {
+        "count": 44,
+        "detected": 42,
+        "recall": 95.45
+      }
+    },
+    "benign_performance": {
+      "benign_count": 45063,
+      "specificity": 97.22,
+      "fpr": 2.78
+    },
+    "prior_adjusted_metrics_at_0_28_percent_benign": {
+      "target_benign_prior_percent": 0.28,
+      "precision_at_prior": 99.99,
+      "specificity": 97.22,
+      "recall": 99.95,
+      "pr_auc_at_prior": 14.09
+    }
+  },
+  "SVM (LinearSVC)": {
+    "overall_metrics": {
+      "TP": 128273,
+      "TN": 43781,
+      "FP": 1282,
+      "FN": 118,
+      "Acc": 99.19,
+      "Acc_95_CI": [
+        99.15,
+        99.23
+      ],
+      "Prec": 99.01,
+      "Rec": 99.91,
+      "Spec": 97.16,
+      "F1": 99.46,
+      "FPR": 2.84,
+      "FNR": 0.09,
+      "ROC_AUC": 99.91,
+      "PR_AUC": 99.96,
+      "Prec_95_CI": [
+        98.96,
+        99.06
+      ],
+      "Rec_95_CI": [
+        99.89,
+        99.92
+      ],
+      "Spec_95_CI": [
+        97.0,
+        97.3
+      ],
+      "F1_95_CI": [
+        99.43,
+        99.48
+      ]
+    },
+    "per_attack_recall": {
+      "Syn": {
+        "count": 35941,
+        "detected": 35839,
+        "recall": 99.72
+      },
+      "UDP": {
+        "count": 26221,
+        "detected": 26221,
+        "recall": 100.0
+      },
+      "LDAP": {
+        "count": 14722,
+        "detected": 14719,
+        "recall": 99.98
+      },
+      "MSSQL": {
+        "count": 24878,
+        "detected": 24875,
+        "recall": 99.99
+      },
+      "NetBIOS": {
+        "count": 22159,
+        "detected": 22157,
+        "recall": 99.99
+      },
+      "Portmap": {
+        "count": 4426,
+        "detected": 4420,
+        "recall": 99.86
+      },
+      "UDPLag": {
+        "count": 44,
+        "detected": 42,
+        "recall": 95.45
+      }
+    },
+    "benign_performance": {
+      "benign_count": 45063,
+      "specificity": 97.16,
+      "fpr": 2.84
+    },
+    "prior_adjusted_metrics_at_0_28_percent_benign": {
+      "target_benign_prior_percent": 0.28,
+      "precision_at_prior": 99.99,
+      "specificity": 97.16,
+      "recall": 99.91,
+      "pr_auc_at_prior": 14.27
+    }
+  }
+}

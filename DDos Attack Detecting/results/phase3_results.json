@@ -1,0 +1,422 @@
+{
+  "metric_averaging_hypothesis": {
+    "XGBoost": {
+      "binary": {
+        "P": 93.02,
+        "R": 95.24,
+        "F1": 94.12
+      },
+      "macro": {
+        "P": 94.38,
+        "R": 94.49,
+        "F1": 94.43
+      },
+      "weighted": {
+        "P": 94.47,
+        "R": 94.44,
+        "F1": 94.45
+      },
+      "reported_table_4": {
+        "P": 89.0,
+        "R": 95.2,
+        "F1": 88.7
+      },
+      "harmonic_from_table_P_R": 92.0
+    },
+    "Random Forest": {
+      "binary": {
+        "P": 95.2,
+        "R": 90.84,
+        "F1": 92.97
+      },
+      "macro": {
+        "P": 93.46,
+        "R": 93.26,
+        "F1": 93.32
+      },
+      "weighted": {
+        "P": 93.41,
+        "R": 93.33,
+        "F1": 93.33
+      },
+      "reported_table_4": {
+        "P": 89.4,
+        "R": 91.2,
+        "F1": 87.1
+      },
+      "harmonic_from_table_P_R": 90.29
+    },
+    "SVM": {
+      "binary": {
+        "P": 93.08,
+        "R": 93.08,
+        "F1": 93.08
+      },
+      "macro": {
+        "P": 93.32,
+        "R": 93.32,
+        "F1": 93.32
+      },
+      "weighted": {
+        "P": 93.33,
+        "R": 93.33,
+        "F1": 93.33
+      },
+      "reported_table_4": {
+        "P": 91.0,
+        "R": 91.0,
+        "F1": 85.0
+      },
+      "harmonic_from_table_P_R": 91.0
+    },
+    "K-Means": {
+      "binary": {
+        "P": 86.89,
+        "R": 81.54,
+        "F1": 84.13
+      },
+      "macro": {
+        "P": 85.33,
+        "R": 85.05,
+        "F1": 85.12
+      },
+      "weighted": {
+        "P": 85.28,
+        "R": 85.19,
+        "F1": 85.16
+      },
+      "reported_table_4": {
+        "P": 88.0,
+        "R": 81.6,
+        "F1": 80.1
+      },
+      "harmonic_from_table_P_R": 84.68
+    },
+    "Naive Bayes": {
+      "binary": {
+        "P": 82.76,
+        "R": 73.28,
+        "F1": 77.73
+      },
+      "macro": {
+        "P": 80.02,
+        "R": 79.45,
+        "F1": 79.48
+      },
+      "weighted": {
+        "P": 79.93,
+        "R": 79.63,
+        "F1": 79.53
+      },
+      "reported_table_4": {
+        "P": 76.0,
+        "R": 73.1,
+        "F1": 67.9
+      },
+      "harmonic_from_table_P_R": 74.52
+    },
+    "Logistic Regression": {
+      "binary": {
+        "P": 85.94,
+        "R": 84.62,
+        "F1": 85.27
+      },
+      "macro": {
+        "P": 85.93,
+        "R": 85.88,
+        "F1": 85.9
+      },
+      "weighted": {
+        "P": 85.93,
+        "R": 85.93,
+        "F1": 85.92
+      },
+      "reported_table_4": {
+        "P": 75.0,
+        "R": 84.6,
+        "F1": 70.4
+      },
+      "harmonic_from_table_P_R": 79.51
+    }
+  },
+  "inconsistency_audit": [
+    {
+      "model": "XGBoost",
+      "cm_normal": {
+        "P": 93.02,
+        "R": 95.24
+      },
+      "cm_swapped": {
+        "P": 95.24,
+        "R": 93.02
+      },
+      "table_4": {
+        "P": 89.0,
+        "R": 95.2
+      }
+    },
+    {
+      "model": "Random Forest",
+      "cm_normal": {
+        "P": 95.2,
+        "R": 90.84
+      },
+      "cm_swapped": {
+        "P": 90.84,
+        "R": 95.2
+      },
+      "table_4": {
+        "P": 89.4,
+        "R": 91.2
+      }
+    },
+    {
+      "model": "SVM",
+      "cm_normal": {
+        "P": 93.08,
+        "R": 93.08
+      },
+      "cm_swapped": {
+        "P": 93.08,
+        "R": 93.08
+      },
+      "table_4": {
+        "P": 91.0,
+        "R": 91.0
+      }
+    },
+    {
+      "model": "K-Means",
+      "cm_normal": {
+        "P": 86.89,
+        "R": 81.54
+      },
+      "cm_swapped": {
+        "P": 81.54,
+        "R": 86.89
+      },
+      "table_4": {
+        "P": 88.0,
+        "R": 81.6
+      }
+    },
+    {
+      "model": "Naive Bayes",
+      "cm_normal": {
+        "P": 82.76,
+        "R": 73.28
+      },
+      "cm_swapped": {
+        "P": 73.28,
+        "R": 82.76
+      },
+      "table_4": {
+        "P": 76.0,
+        "R": 73.1
+      }
+    },
+    {
+      "model": "Logistic Regression",
+      "cm_normal": {
+        "P": 85.94,
+        "R": 84.62
+      },
+      "cm_swapped": {
+        "P": 84.62,
+        "R": 85.94
+      },
+      "table_4": {
+        "P": 75.0,
+        "R": 84.6
+      }
+    }
+  ],
+  "statistical_comparisons": {
+    "XGBoost": {
+      "paper_acc": 95.2,
+      "paper_ci": [
+        91.96,
+        97.18
+      ],
+      "ci_width": 5.22
+    },
+    "Random Forest": {
+      "paper_acc": 93.2,
+      "paper_ci": [
+        89.55,
+        95.64
+      ],
+      "ci_width": 6.09
+    },
+    "SVM": {
+      "paper_acc": 91.2,
+      "paper_ci": [
+        87.22,
+        94.03
+      ],
+      "ci_width": 6.81
+    },
+    "K-Means": {
+      "paper_acc": 84.6,
+      "paper_ci": [
+        79.81,
+        88.42
+      ],
+      "ci_width": 8.61
+    },
+    "Naive Bayes": {
+      "paper_acc": 76.9,
+      "paper_ci": [
+        71.52,
+        81.53
+      ],
+      "ci_width": 10.01
+    },
+    "Logistic Regression": {
+      "paper_acc": 74.1,
+      "paper_ci": [
+        68.56,
+        78.96
+      ],
+      "ci_width": 10.4
+    }
+  },
+  "scaling_hypothesis": {
+    "Logistic Regression": {
+      "acc_unscaled": 78.89,
+      "acc_scaled": 97.78,
+      "delta": 18.89,
+      "paper_acc": 74.1
+    },
+    "SVM (LinearSVC)": {
+      "acc_unscaled": 73.7,
+      "acc_scaled": 97.78,
+      "delta": 24.07,
+      "paper_acc": 91.2
+    },
+    "Naive Bayes": {
+      "acc_unscaled": 54.44,
+      "acc_scaled": 58.15,
+      "delta": 3.7,
+      "paper_acc": 76.9
+    }
+  },
+  "feature_ablation": {
+    "Setup_B": {
+      "Full_20": {
+        "Random Forest": {
+          "Acc": 99.92,
+          "F1": 99.95
+        },
+        "XGBoost": {
+          "Acc": 99.91,
+          "F1": 99.94
+        },
+        "Logistic Regression": {
+          "Acc": 99.25,
+          "F1": 99.53
+        }
+      },
+      "Drop_Dest_Port": {
+        "Random Forest": {
+          "Acc": 99.87,
+          "F1": 99.92
+        },
+        "XGBoost": {
+          "Acc": 99.85,
+          "F1": 99.9
+        },
+        "Logistic Regression": {
+          "Acc": 99.26,
+          "F1": 99.53
+        }
+      },
+      "Drop_Flow_Duration": {
+        "Random Forest": {
+          "Acc": 99.93,
+          "F1": 99.96
+        },
+        "XGBoost": {
+          "Acc": 99.91,
+          "F1": 99.94
+        },
+        "Logistic Regression": {
+          "Acc": 99.24,
+          "F1": 99.52
+        }
+      },
+      "Drop_Both": {
+        "Random Forest": {
+          "Acc": 99.87,
+          "F1": 99.92
+        },
+        "XGBoost": {
+          "Acc": 99.85,
+          "F1": 99.91
+        },
+        "Logistic Regression": {
+          "Acc": 99.25,
+          "F1": 99.53
+        }
+      }
+    },
+    "Setup_C": {
+      "Full_20": {
+        "Random Forest": {
+          "Acc": 98.69,
+          "F1": 99.12
+        },
+        "XGBoost": {
+          "Acc": 98.5,
+          "F1": 99.0
+        },
+        "Logistic Regression": {
+          "Acc": 99.24,
+          "F1": 99.49
+        }
+      },
+      "Drop_Dest_Port": {
+        "Random Forest": {
+          "Acc": 98.64,
+          "F1": 99.09
+        },
+        "XGBoost": {
+          "Acc": 98.65,
+          "F1": 99.09
+        },
+        "Logistic Regression": {
+          "Acc": 99.22,
+          "F1": 99.47
+        }
+      },
+      "Drop_Flow_Duration": {
+        "Random Forest": {
+          "Acc": 98.68,
+          "F1": 99.12
+        },
+        "XGBoost": {
+          "Acc": 98.39,
+          "F1": 98.93
+        },
+        "Logistic Regression": {
+          "Acc": 99.27,
+          "F1": 99.51
+        }
+      },
+      "Drop_Both": {
+        "Random Forest": {
+          "Acc": 98.78,
+          "F1": 99.18
+        },
+        "XGBoost": {
+          "Acc": 98.61,
+          "F1": 99.07
+        },
+        "Logistic Regression": {
+          "Acc": 99.2,
+          "F1": 99.46
+        }
+      }
+    }
+  }
+}

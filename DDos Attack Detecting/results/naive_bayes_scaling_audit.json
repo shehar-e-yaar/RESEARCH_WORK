@@ -1,0 +1,27 @@
+{
+  "var_smoothing_1e-09": {
+    "var_smoothing": 1e-09,
+    "unscaled_accuracy": 59.63,
+    "scaled_accuracy": 64.81,
+    "delta": 5.19
+  },
+  "var_smoothing_1e-12": {
+    "var_smoothing": 1e-12,
+    "unscaled_accuracy": 60.37,
+    "scaled_accuracy": 64.81,
+    "delta": 4.44
+  },
+  "var_smoothing_1e-15": {
+    "var_smoothing": 1e-15,
+    "unscaled_accuracy": 63.7,
+    "scaled_accuracy": 64.81,
+    "delta": 1.11
+  },
+  "var_smoothing_0.0": {
+    "var_smoothing": 0.0,
+    "unscaled_accuracy": 64.81,
+    "scaled_accuracy": 64.81,
+    "delta": 0.0
+  },
+  "mathematical_explanation": "Gaussian Naive Bayes is mathematically invariant to linear scaling (StandardScaler). However, scikit-learn adds an absolute variance floor epsilon = var_smoothing * max(variance). On unscaled network traffic, Flow Bytes/s has variance ~10^16, so epsilon = 10^7, which gets added to low-variance features like ACK Flag Count (variance ~0.1), completely destroying their separability. When var_smoothing=0 or when features are standardized, the variance floor does not distort features, proving the gap is an artifact of scikit-learn's global var_smoothing parameter."
+}

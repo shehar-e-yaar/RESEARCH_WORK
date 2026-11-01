@@ -1,0 +1,7 @@
+path: C:\Users\SHEHARYAR HAMD\OneDrive\Desktop\Research\Snake Detector Model\snake-2
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 2
+names: ['Non-Venomous', 'Venomous']

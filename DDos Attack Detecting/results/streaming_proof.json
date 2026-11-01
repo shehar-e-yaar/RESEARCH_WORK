@@ -1,0 +1,30 @@
+{
+  "environment_audit": {
+    "docker_status": "Docker CLI (v29.2.1) is installed, but the Docker Desktop Linux Engine daemon (//./pipe/dockerDesktopLinuxEngine) was not active because Docker Desktop requires interactive GUI startup/EULA acceptance and com.docker.service requires Administrator elevation. Therefore, Kafka containers were not running locally.",
+    "throughput_non_monotonic_root_cause": "The previous in-process benchmark enforced target emission rates using Python's time.sleep(target_duration - elapsed). On Windows, the default system timer resolution is 15.625 ms (64 ticks/sec). For target rates like 25,000 rows/s with micro-batches of 500 rows, target_duration is 20 ms. Calling time.sleep() for ~15 ms frequently caused the Windows thread scheduler to suspend the process for 2 timer ticks (~31.25 ms), artificially collapsing throughput down to 24-38 rows/s. At 100,000 rows/s, target_duration was 5 ms (< elapsed), so time.sleep was completely bypassed, allowing unthrottled execution at 7,000+ rows/s. This timer quantization created the severe non-monotonic throughput artifact."
+  },
+  "spark_structured_streaming_verified": true,
+  "total_rows_processed": 10000,
+  "micro_batches": [
+    {
+      "batch_id": 0,
+      "timestamp": "2026-10-08T17:37:56.030Z",
+      "num_input_rows": 2000,
+      "input_rows_per_second": 0.0,
+      "processed_rows_per_second": 206.31,
+      "duration_ms_trigger": 9694,
+      "duration_ms_get_batch": 338,
+      "duration_ms_add_batch": 6157
+    },
+    {
+      "batch_id": 1,
+      "timestamp": "2026-10-08T17:38:05.787Z",
+      "num_input_rows": 8000,
+      "input_rows_per_second": 819.92,
+      "processed_rows_per_second": 1533.74,
+      "duration_ms_trigger": 5216,
+      "duration_ms_get_batch": 140,
+      "duration_ms_add_batch": 2594
+    }
+  ]
+}

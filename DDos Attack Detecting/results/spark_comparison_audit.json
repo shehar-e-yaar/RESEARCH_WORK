@@ -1,0 +1,16 @@
+{
+  "Decision_Tree": {
+    "Spark_Accuracy": 83.59,
+    "Sklearn_Accuracy": 96.0,
+    "Delta": -12.41,
+    "comparability_status": "NOT directly comparable",
+    "technical_reason": "Spark DecisionTreeClassifier uses approximate histogram binning (maxBins=32 by default) to distribute feature splitting across cluster nodes, whereas scikit-learn DecisionTreeClassifier performs exact continuous threshold optimization across all unique feature values. On network flow distributions with extreme outliers (Flow Duration, Flow Bytes/s), 32 quantile bins collapse subtle decision boundaries."
+  },
+  "Naive_Bayes": {
+    "Spark_Accuracy": 77.71,
+    "Sklearn_Accuracy": 79.92,
+    "Delta": -2.21,
+    "comparability_status": "NOT directly comparable",
+    "technical_reason": "Spark MLlib NaiveBayes modelType='gaussian' computes variance thresholds per partition without scikit-learn's global var_smoothing regularization. Additionally, Spark uses partition-level aggregation while scikit-learn computes exact in-memory sample moments."
+  }
+}

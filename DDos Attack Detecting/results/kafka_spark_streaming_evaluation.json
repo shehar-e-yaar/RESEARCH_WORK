@@ -1,0 +1,26 @@
+{
+  "mode": "file",
+  "model": "Random Forest (Spark MLlib)",
+  "flows_evaluated": 6000,
+  "offline_accuracy_pct": 98.98,
+  "streaming_accuracy_pct": 98.98,
+  "prediction_match_rate_pct": 100.0,
+  "latency_p50_ms": 2706.0,
+  "latency_p95_ms": 3091.2,
+  "latency_p99_ms": 3125.44,
+  "average_throughput_rows_per_sec": 1136.48,
+  "micro_batches": [
+    {
+      "batch_id": 0,
+      "rows": 3000,
+      "exec_duration_ms": 3134,
+      "throughput_rows_per_sec": 956.02
+    },
+    {
+      "batch_id": 1,
+      "rows": 3000,
+      "exec_duration_ms": 2278,
+      "throughput_rows_per_sec": 1316.94
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+    "model": "RF",
+    "stage": "Test2019",
+    "accuracy": 0.9998,
+    "precision": 0.999798752264037,
+    "recall": 1.0,
+    "f1_score": 0.9998993660058367,
+    "false_positive_rate": 0.03125,
+    "roc_auc": 0.9999968548711755,
+    "pr_auc": 0.9999999797455982,
+    "inference_time_per_sample": 7.043981552124023e-06
+}

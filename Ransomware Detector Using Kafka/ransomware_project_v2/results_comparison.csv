@@ -1,0 +1,7 @@
+Model,Paper_Reported_%,Reproduced_%,Difference_%
+XGBoost,95.2,100.0,4.8
+Random Forest,93.1,100.0,6.9
+SVM,91.4,99.97,8.57
+K-Means,84.6,93.31,8.71
+Naive Bayes,76.9,99.14,22.24
+Logistic Regression,74.1,99.91,25.81

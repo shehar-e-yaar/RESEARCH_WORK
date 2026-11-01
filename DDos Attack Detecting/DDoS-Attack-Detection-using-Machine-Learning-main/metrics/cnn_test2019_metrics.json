@@ -1,0 +1,12 @@
+{
+    "model": "CNN",
+    "stage": "Test2019",
+    "accuracy": 0.9949,
+    "precision": 0.9994253699181153,
+    "recall": 0.9932895488292405,
+    "f1_score": 0.9963480128893663,
+    "false_positive_rate": 0.0013351134846461949,
+    "roc_auc": 0.9998315381864569,
+    "pr_auc": 0.9999306997028828,
+    "inference_time_per_sample": 4.682583808898926e-05
+}

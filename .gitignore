@@ -1,0 +1,32 @@
+# Python virtual environments
+**/venv/
+**/venv*/
+**/.venv/
+**/env/
+**/ENV/
+
+# Python cache & compiled bytecode
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Streaming / temporary execution directories
+DDos Attack Detecting/streaming_checkpoint/
+DDos Attack Detecting/streaming_temp/
+DDos Attack Detecting/test_stream_dir/
+
+# OS and system files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# IDE configurations
+.idea/
+.vscode/
+*.swp
+*.swo

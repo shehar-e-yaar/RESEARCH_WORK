@@ -1,0 +1,124 @@
+{
+  "training_time_s": 21.66,
+  "rates_tested": [
+    10000,
+    25000,
+    100000
+  ],
+  "repeats_per_rate": 3,
+  "runs": [
+    {
+      "target_rate": 10000,
+      "repeat": 1,
+      "actual_throughput_rps": 4478.2,
+      "total_time_s": 11.165,
+      "p50_latency_ms": 0.2169,
+      "p95_latency_ms": 0.2852,
+      "p99_latency_ms": 0.3619,
+      "prediction_match_rate": 100.0
+    },
+    {
+      "target_rate": 10000,
+      "repeat": 2,
+      "actual_throughput_rps": 4106.0,
+      "total_time_s": 12.177,
+      "p50_latency_ms": 0.2369,
+      "p95_latency_ms": 0.3374,
+      "p99_latency_ms": 0.3464,
+      "prediction_match_rate": 100.0
+    },
+    {
+      "target_rate": 10000,
+      "repeat": 3,
+      "actual_throughput_rps": 3789.5,
+      "total_time_s": 13.194,
+      "p50_latency_ms": 0.2624,
+      "p95_latency_ms": 0.3267,
+      "p99_latency_ms": 0.371,
+      "prediction_match_rate": 100.0
+    },
+    {
+      "target_rate": 25000,
+      "repeat": 1,
+      "actual_throughput_rps": 23.7,
+      "total_time_s": 2107.071,
+      "p50_latency_ms": 0.2582,
+      "p95_latency_ms": 0.3586,
+      "p99_latency_ms": 44.0407,
+      "prediction_match_rate": 100.0
+    },
+    {
+      "target_rate": 25000,
+      "repeat": 2,
+      "actual_throughput_rps": 37.9,
+      "total_time_s": 1319.715,
+      "p50_latency_ms": 0.105,
+      "p95_latency_ms": 0.3073,
+      "p99_latency_ms": 27.2454,
+      "prediction_match_rate": 100.0
+    },
+    {
+      "target_rate": 25000,
+      "repeat": 3,
+      "actual_throughput_rps": 6555.4,
+      "total_time_s": 7.627,
+      "p50_latency_ms": 0.1267,
+      "p95_latency_ms": 0.2545,
+      "p99_latency_ms": 0.3772,
+      "prediction_match_rate": 100.0
+    },
+    {
+      "target_rate": 100000,
+      "repeat": 1,
+      "actual_throughput_rps": 5316.7,
+      "total_time_s": 9.404,
+      "p50_latency_ms": 0.1823,
+      "p95_latency_ms": 0.2911,
+      "p99_latency_ms": 0.3204,
+      "prediction_match_rate": 100.0
+    },
+    {
+      "target_rate": 100000,
+      "repeat": 2,
+      "actual_throughput_rps": 7766.3,
+      "total_time_s": 6.438,
+      "p50_latency_ms": 0.12,
+      "p95_latency_ms": 0.1936,
+      "p99_latency_ms": 0.2496,
+      "prediction_match_rate": 100.0
+    },
+    {
+      "target_rate": 100000,
+      "repeat": 3,
+      "actual_throughput_rps": 8454.9,
+      "total_time_s": 5.914,
+      "p50_latency_ms": 0.1032,
+      "p95_latency_ms": 0.1931,
+      "p99_latency_ms": 0.2081,
+      "prediction_match_rate": 100.0
+    }
+  ],
+  "summary": {
+    "10000": {
+      "avg_throughput_rps": 4124.6,
+      "avg_p50_ms": 0.2387,
+      "avg_p95_ms": 0.3164,
+      "avg_p99_ms": 0.3598,
+      "match_rate": 100.0
+    },
+    "25000": {
+      "avg_throughput_rps": 2205.7,
+      "avg_p50_ms": 0.1633,
+      "avg_p95_ms": 0.3068,
+      "avg_p99_ms": 23.8878,
+      "match_rate": 100.0
+    },
+    "100000": {
+      "avg_throughput_rps": 7179.3,
+      "avg_p50_ms": 0.1352,
+      "avg_p95_ms": 0.2259,
+      "avg_p99_ms": 0.2594,
+      "match_rate": 100.0
+    }
+  }
+}
